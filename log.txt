@@ -1,0 +1,46 @@
+10 - 1 = 9
+4 * 3 = 12
+4 * 3 = 12
+10 - 1 = 9
+10 - 1 = 9
+4 * 3 = 12
+-5 / 0 [ERROR -> Can't divide by zero]
+0 / 0 [ERROR -> Can't divide by zero]
+6 / 0 [ERROR -> Can't divide by zero]
+-6 / 0 [ERROR -> Can't divide by zero]
+4 / 1 = 4
+0 / 8 = 0
+5 / 0 [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN + NaN [ERROR -> Can't divide by zero]
+5 + 5 = 10
+NaN + NaN [ERROR -> Can't divide by zero]
+NaN undefined NaN [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN undefined NaN [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN undefined NaN [ERROR -> Can't divide by zero]
+NaN undefined NaN [ERROR -> Can't divide by zero]
+NaN undefined NaN [ERROR -> Can't divide by zero]
+NaN undefined NaN [ERROR -> Can't divide by zero]
+NaN undefined NaN [ERROR -> Can't divide by zero]
+NaN undefined NaN [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN undefined NaN [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN undefined NaN [ERROR -> Can't divide by zero]
+NaN + 5 [ERROR -> Can't divide by zero]
+NaN undefined NaN [ERROR -> Can't divide by zero]
+NaN undefined NaN [ERROR -> Can't divide by zero]

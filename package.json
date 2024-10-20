@@ -1,0 +1,16 @@
+{
+  "name": "week_05_challenge",
+  "version": "1.0.0",
+  "description": "week_05_challenge jest demo",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
