@@ -1,32 +1,51 @@
-const { operandsValid, operatorValid } = require("../main");
 const { add, subtract, multiply, divide } = require("../calculator");
 
-// test for invalid inputs
-describe("Operator validation", () => {
-    // test if any of the operands are not numbers an exception is thrown
-    test("throws error if left operand is NaN", () => {
-        expect(() => operandsValid("a", 100)).toThrow("Operands must be valid numbers"); // 
-    });
-    test("throws error if right operand is NaN", () => {
-        expect(() => operandsValid(100, "b")).toThrow("Operands must be valid numbers"); // 
-    });
-    test("throws error if both operands are NaN", () => {
-        expect(() => operandsValid("a", "b")).toThrow("Operands must be valid numbers"); // 
-    });
-    // ok if both operands are numbers
-    test("pass if both operands are numbers", () => {
-        expect(operandsValid("1.234", "0")).toBe(true); // 
+describe("add validation", () => {
+    // test add with zero, integers and floats
+    test("test add with zero, integers and floats", () => {
+        expect(add(0, 10)).toBe(10);
+        expect(add(5.342, 0)).toBe(5.342);
+        expect(add(-5, 10.34234)).toBe(5.34234);
+        expect(add(5, -10)).toBe(-5);
+        expect(add(-5, -10)).toBe(-15);
+        expect(add(-5, -10.3423)).toBe(-15.3423);
     });
 });
 
-// test for valid operators
-describe("Operand validation", () => {
-    // should Error operator is unknown
-    test("throws error if operation is unknown", () => {
-        expect(() => operatorValid("&")).toThrow("Unknown operation"); // 
+describe("subtract validation", () => {
+    // test subtract with zero, integers and floats
+    test("test subtract with zero, integers and floats", () => {
+        expect(subtract(0, 10)).toBe(-10);
+        expect(subtract(5.342, 0)).toBe(5.342);
+        expect(subtract(-5, 10.34234)).toBe(-15.34234);
+        expect(subtract(5, -10)).toBe(15);
+        expect(subtract(-5, -10)).toBe(5);
+        expect(subtract(-5, -10.3423)).toBe(5.3423);
     });
-    // should pass if operator is known
-    test("pass if operator is known", () => {
-        expect(operatorValid("+")).toBe(true); // 
+});
+
+describe("multiply validation", () => {
+    // test multiply with zero, integers and floats
+    test("test multiply with zero, integers and floats", () => {
+        expect(multiply(0, 10)).toBe(0);
+        expect(multiply(5.342, 0)).toBe(0);
+        expect(multiply(-5, 10.34234)).toBe(-51.7117);
+        expect(multiply(5, -10)).toBe(-50);
+        expect(multiply(-5, -10)).toBe(50);
+        expect(multiply(-5, -10.3423)).toBe(51.7115);
+    });
+});
+
+describe("divide validation", () => {
+    // test divide with zero, integers and floats
+    test("test add with zero, integers and floats", () => {
+        expect(divide(0, 0)).toBe(NaN);
+        expect(divide(0, 10)).toBe(0);
+        expect(divide(-5, 10.34234)).toBe(-0.4834495868439831);
+        expect(divide(5, -10)).toBe(-0.5);
+        expect(divide(-5, -10)).toBe(0.5);
+        expect(divide(-5, 0)).toBe(-Infinity);
+        expect(divide(5, 0)).toBe(+Infinity);
+        expect(divide(0, -10.3423)).toBe(-0);
     });
 });
