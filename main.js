@@ -15,7 +15,7 @@ const calc = require('./calculator.js');
 const message = process.argv.slice(2);
 
 // Check if a message was provided
-if (!message) {
+if (!message.length) {
     console.log("Usage n1 + 2 | n1 - n2 | n1 * n2 | n1 / n2 ");
     process.exit(1); // Exit the process if no message is provided
 }
